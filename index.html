@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GTM Strategic Portfolio - Rakozi ZOMALETHO</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Urbanist:wght@400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <style>
+        /* 1. THE FOUNDATION */
+        * { box-sizing: border-box; }
+        body { 
+            background-color: #1a1a1a; 
+            display: flex; 
+            flex-direction: column; 
+            gap: 40px; 
+            margin: 0; 
+            padding: 40px 0; 
+            align-items: center;
+        }
+
+        .slide-container { 
+            align-items: flex-start; 
+            background-color: #000; 
+            border-radius: 12px; 
+            box-shadow: 0 20px 40px rgba(0, 0, 0, 0.4); 
+            display: flex; 
+            flex-direction: column; 
+            font-family: 'Urbanist', sans-serif; 
+            height: 720px; 
+            justify-content: center; 
+            overflow: hidden; 
+            padding: 80px; 
+            position: relative; 
+            width: 1280px; 
+            border: 1px solid rgba(222, 255, 154, 0.05);
+        }
+
+        .slide-container::after { 
+            background: rgba(222, 255, 154, 0.15); 
+            bottom: 40px; 
+            content: ''; 
+            height: 1px; 
+            left: 80px; 
+            position: absolute; 
+            right: 80px; 
+        }
+
+        .slide-container > * { position: relative; z-index: 1; }
+
+        /* 2. TYPOGRAPHY & COLORS */
+        h1, h2, h3 { color: #f5f5f5; font-weight: 700; margin: 0; }
+        h1 span, h2 span, h3 span { color: #deff9a; }
+        p, li, .subtitle { color: #daffde; font-size: 22px; line-height: 1.5; margin: 0; }
+        .slide-title { font-size: 54px; margin-bottom: 40px; text-align: left; width: 100%; border-left: 6px solid #deff9a; padding-left: 20px; }
+        
+        .title-layout h1 { font-size: 96px; line-height: 0.9; margin-bottom: 20px; }
+        .section-title-layout h2 { font-size: 82px; margin-bottom: 20px; text-align: center; width: 100%; }
+        
+        /* 3. LAYOUT COMPONENTS */
+        .content-area { display: flex; flex-direction: column; flex-grow: 1; justify-content: center; width: 100%; }
+        .two-column { display: flex; gap: 60px; width: 100%; }
+        .tile { 
+            background-color: #111; 
+            border-radius: 20px; 
+            padding: 40px; 
+            display: flex; 
+            flex-direction: column; 
+            gap: 20px; 
+            border: 1px solid rgba(222, 255, 154, 0.1); 
+            flex: 1; 
+        }
+        .tile h3 { color: #deff9a; font-size: 32px; }
+
+        .highlight-numbers { display: flex; justify-content: space-around; width: 100%; }
+        .number-box { text-align: center; }
+        .number { color: #deff9a; font-size: 160px; font-weight: 700; line-height: 1; }
+        .number-label { color: #f5f5f5; font-size: 26px; font-weight: 500; margin-top: 15px; opacity: 0.8; }
+
+        .icon-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 30px; width: 100%; }
+        .icon-tile { background: #111; padding: 50px; border-radius: 24px; text-align: center; border: 1px solid rgba(222, 255, 154, 0.1); }
+        .icon-tile i { font-size: 54px; color: #deff9a; margin-bottom: 25px; }
+
+        /* Charts */
+        .bar-chart { display: flex; flex-direction: column; gap: 25px; width: 100%; }
+        .bar-row { display: flex; align-items: center; gap: 25px; }
+        .bar-label { flex: 0 0 200px; text-align: right; font-weight: 500; color: #f5f5f5; font-size: 20px; }
+        .bar-bg { background: #222; flex-grow: 1; height: 50px; border-radius: 25px; overflow: hidden; }
+        .bar-fill { background: linear-gradient(90deg, #deff9a, #a2ff00); height: 100%; display: flex; align-items: center; padding-right: 20px; justify-content: flex-end; color: #000; font-weight: 700; font-size: 22px; }
+
+        .doughnut-container { display: flex; align-items: center; justify-content: center; gap: 100px; width: 100%; }
+        .doughnut { width: 400px; height: 400px; border-radius: 50%; background: conic-gradient(#deff9a 0% 75%, #333 75% 100%); position: relative; }
+        .doughnut::after { content: ''; position: absolute; top: 60px; left: 60px; right: 60px; bottom: 60px; background: #000; border-radius: 50%; }
+    </style>
+</head>
+<body>
+
+<!-- 01: TITLE -->
+<div class="slide-container">
+    <div class="title-layout" style="text-align: center; width: 100%;">
+        <h1>GTM & <span>Ecosystem</span> Lead</h1>
+        <p class="subtitle" style="font-size: 28px; margin-top: 20px;">Strategic Portfolio: Architecting Infrastructure for Market Adoption</p>
+        <p class="subtitle" style="margin-top: 60px; opacity: 0.6;">Rakozi ZOMALETHO | ASI Alliance Strategic Partner</p>
+    </div>
+</div>
+
+<!-- 02: THE BASELINE -->
+<div class="slide-container">
+    <h2 class="slide-title">2025 H1: The <span>Efficiency</span> Gap</h2>
+    <div class="content-area">
+        <div class="two-column">
+            <div class="tile">
+                <h3>The Hourly Trap</h3>
+                <p>Operational reliance on reactive, hourly-based tasks led to fragmented messaging and high-waste effort.</p>
+            </div>
+            <div class="tile">
+                <h3>Vague Distribution</h3>
+                <p>Lack of technical parity between core AI development and external market perception.</p>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- 03: THE PIVOT -->
+<div class="slide-container">
+    <div class="section-title-layout">
+        <h2>The <span>Strategic</span> Pivot</h2>
+        <p class="subtitle" style="text-align: center;">Transitioning from "Broadcast Marketing" to "Distribution Engineering"</p>
+    </div>
+</div>
+
+<!-- 04: THE RESULTS -->
+<div class="slide-container">
+    <h2 class="slide-title">H2 2025: <span>Velocity</span> Impact</h2>
+    <div class="content-area">
+        <div class="highlight-numbers">
+            <div class="number-box">
+                <div class="number">300%</div>
+                <div class="number-label">Traffic Growth</div>
+            </div>
+            <div class="number-box">
+                <div class="number">2,671</div>
+                <div class="number-label">Total Distributions</div>
+            </div>
+            <div class="number-box">
+                <div class="number">153k</div>
+                <div class="number-label">Total Impressions</div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- 05: CASE STUDY DEEP -->
+<div class="slide-container">
+    <h2 class="slide-title">Case Study: <span>DEEP</span> Machine</h2>
+    <div class="content-area">
+        <div class="two-column">
+            <div class="tile">
+                <h3>Technical Translation</h3>
+                <p>Converted Hyperon/SNET logic into high-impact narratives that drove 2,236 direct ecosystem clicks in 6 months.</p>
+            </div>
+            <div class="tile">
+                <h3>Operational Rigor</h3>
+                <p>Built the synchronized human-AI engine allowing for 100% distribution consistency across X and LinkedIn.</p>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- 06: DATA ANALYSIS PERFORMANCE -->
+<div class="slide-container">
+    <h2 class="slide-title">Audience <span>Scaling</span> (H1 vs H2)</h2>
+    <div class="content-area">
+        <div class="bar-chart">
+            <div class="bar-row">
+                <div class="bar-label">H2 Unique Users</div>
+                <div class="bar-bg"><div class="bar-fill" style="width: 100%;">16,361</div></div>
+            </div>
+            <div class="bar-row">
+                <div class="bar-label">H1 Unique Users</div>
+                <div class="bar-bg"><div class="bar-fill" style="width: 82%; opacity: 0.5;">13,384</div></div>
+            </div>
+            <p style="margin-top: 30px; opacity: 0.7;">Conclusion: +22.24% Net Growth through targeted distribution cycles.</p>
+        </div>
+    </div>
+</div>
+
+<!-- 07: DATA ANALYSIS STICKINESS -->
+<div class="slide-container">
+    <h2 class="slide-title">The <span>Stickiness</span> Gap Analysis</h2>
+    <div class="content-area">
+        <div class="doughnut-container">
+            <div class="doughnut"></div>
+            <div style="flex: 1;">
+                <h3 style="margin-bottom: 20px;">75% <span>Activation</span> Target</h3>
+                <p>Identified that while reach was high, session depth required "Technical Return Journeys."</p>
+                <p style="margin-top: 20px; color: #deff9a;">Solution: Implementation of Outcome-Based Tracking.</p>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- 08: YAZI SCALE -->
+<div class="slide-container">
+    <h2 class="slide-title">Yazi: <span>Institutional</span> Scaling</h2>
+    <div class="content-area">
+        <div class="highlight-numbers">
+            <div class="number-box">
+                <div class="number">48</div>
+                <div class="number-label">Full-Time Employees</div>
+            </div>
+            <div class="number-box">
+                <div class="number">400%</div>
+                <div class="number-label">Annual Growth Rate</div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- 09: THE INFRASTRUCTURE BRIDGE -->
+<div class="slide-container">
+    <h2 class="slide-title">GCP Core to <span>ASI</span> Stack</h2>
+    <div class="content-area">
+        <div class="two-column">
+            <div class="tile">
+                <h3>Legacy Mastery</h3>
+                <p>Tier 1 Google Reseller status. Deep expertise in GCP Enterprise architecture and B2B cloud delivery.</p>
+            </div>
+            <div class="tile">
+                <h3>Future Integration</h3>
+                <p>Hybridization of centralized cloud rigor with the ASI/Hyperon decentralized tech stack for massive scaling.</p>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- 10: CORE COMPETENCIES -->
+<div class="slide-container">
+    <h2 class="slide-title">Operational <span>Pillars</span></h2>
+    <div class="content-area">
+        <div class="icon-grid">
+            <div class="icon-tile">
+                <i class="fa-solid fa-rocket"></i>
+                <h3>GTM Strategy</h3>
+                <p>Architecting "Functional Launch Engines" for developer activation.</p>
+            </div>
+            <div class="icon-tile">
+                <i class="fa-solid fa-clapperboard"></i>
+                <h3>Creative Oversight</h3>
+                <p>Directing technical media to ensure logical and visual parity.</p>
+            </div>
+            <div class="icon-tile">
+                <i class="fa-solid fa-server"></i>
+                <h3>Hybrid Scaling</h3>
+                <p>Bridging GCP enterprise stability with ASI decentralized power.</p>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- 11: VISION ASI:CREATE -->
+<div class="slide-container">
+    <h2 class="slide-title">Vision: <span>ASI:Create</span> Launch</h2>
+    <div class="content-area">
+        <div class="tile" style="border-color: #deff9a; background: linear-gradient(135deg, #111 0%, #000 100%);">
+            <h3>The Functional Launch Engine</h3>
+            <p>1. <strong>Technical Translation:</strong> Converting Hyperon logic into builder-ready media.</p>
+            <p>2. <strong>Market Hybridization:</strong> Leveraging GCP infrastructure to scale ASI platform onboarding.</p>
+            <p>3. <strong>Regulatory Rigor:</strong> 100% Compliance scrubbing to protect ASI/SNET brand equity.</p>
+        </div>
+    </div>
+</div>
+
+<!-- 12: CTA -->
+<div class="slide-container" style="text-align: center;">
+    <div class="section-title-layout">
+        <h2>Ready for <span>Deployment</span></h2>
+        <p class="subtitle" style="margin-top: 40px;">Let’s build the infrastructure for the next era of Beneficial AGI.</p>
+        <div style="margin-top: 80px; opacity: 0.5;">
+            <p>Strategic Portfolio - Rakozi ZOMALETHO</p>
+        </div>
+    </div>
+</div>
+
+</body>
+</html>
